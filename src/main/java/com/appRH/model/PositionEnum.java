@@ -1,25 +1,22 @@
 package com.appRH.model;
 
 public enum PositionEnum {
-    ENFERMEIRO("Enfermeiro", 2500.00),
-    TECNICO_ENFERMAGEM("Técnico de Enfermagem", 1800.00),
-    ESTAGIARIO("Estagiário", 900.00);
+    ENFERMEIRO("Enfermeiro"),
+    TECNICO_ENFERMAGEM("Técnico de Enfermagem"),
+    ESTAGIARIO("Estagiário"),
+    FERIAS("Férias");
+	
 
     private final String name;
-    private final double salary;
+    
 
     // Construtor do enum precisa ser private
-    private PositionEnum(String name, double salary) {
+    private PositionEnum(String name) {
         this.name = name;
-        this.salary = salary;
     }
 
     public String getName() {
         return name;
-    }
-
-    public double getSalary() {
-        return salary;
     }
 }
 
